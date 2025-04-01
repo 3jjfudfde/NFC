@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구글 뮤직</title>
+    <style>
+        body {
+            text-align: center;
+            font-size: 2rem;
+            margin-top: 20%;
+        }
+    </style>
+</head>
+<body>
+    <p id="message">🔮 오늘의 팝송은🔮</p>
+    <button onclick="showRandomMessage()">눌러서 확인하기</button>
+
+    <script>
+        function showRandomMessage() {
+            const messages = [
+                "Bruno Mars - The Lazy Song",
+                "Anne Mari-2002",
+                "Maroon5 - Payphone",
+                "One Republic - Counting Stars",
+                "Charlie Puth - See You Again",
+                "Today Is a Good Day to Live",
+                "Would You Stay - Mindme",
+                " Someone I Used  to Know",
+                "Charlie Puth - One Call Away",
+                "Justin Biber - Love Yourself",
+                "Justin Bieber - Stay",
+                "Justin Bieber - Sorry",
+                "The Chainsmokers - Closer"
+            ];
+            document.getElementById("message").innerText = messages[Math.floor(Math.random() * messages.length)];
+        }
+    </script>
+</body>
+</html>
